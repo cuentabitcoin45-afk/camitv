@@ -1,0 +1,50 @@
+<nav class="nav">
+    <div class="nav-inner">
+      <a href="/index.html" class="nav-brand">
+        <div class="nav-logo-icon">
+          <img src="/assets/logo-cami-tv.webp" alt="CamiTV">
+        </div>
+        <span class="nav-logo-text">Cami<span>TV</span></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="/index.html" class="nav-link">Inicio</a>
+        <a href="/movies/movies.html" class="nav-link">Películas</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link" id="genresDropdownToggle">Géneros <iconify-icon icon="lucide:chevron-down" width="14"></iconify-icon></a>
+          <div class="dropdown-content" id="genresDropdownContent">
+            <!-- Géneros se cargarán aquí dinámicamente -->
+          </div>
+        </div>
+        <a href="/mi-lista/mi-lista.html" class="nav-link">Mi Lista</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="/search/search.html" class="nav-search-btn"><iconify-icon icon="lucide:search"></iconify-icon></a>
+        <button class="nav-icon-btn"><iconify-icon icon="lucide:bell" width="18"></iconify-icon></button>
+        <div class="nav-avatar nav-avatar-header"><iconify-icon icon="lucide:user" width="22"></iconify-icon></div>
+        <button id="menuToggle" class="nav-menu-btn">
+          <iconify-icon icon="lucide:menu" width="22"></iconify-icon>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <div class="mobile-link mobile-avatar-link">
+              <div class="nav-avatar"><iconify-icon icon="lucide:user" width="22"></iconify-icon></div>
+              <span>Mi Perfil</span>
+        </div>
+        <a href="/index.html" class="mobile-link">Inicio</a>
+        <a href="/movies/movies.html" class="mobile-link">Películas</a>
+        <a href="/mi-lista/mi-lista.html" class="mobile-link">Mi Lista</a>
+        <div class="mobile-dropdown">
+          <button class="mobile-link mobile-link--inactive mobile-dropdown-btn" id="mobileGenresToggle">
+            Géneros <iconify-icon icon="lucide:chevron-down" width="14"></iconify-icon>
+          </button>
+          <div id="mobileGenresContent" class="mobile-dropdown-content"></div>
+        </div>
+            
+      </div>
+    </div>
+  </nav>

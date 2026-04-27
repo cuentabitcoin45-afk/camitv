@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CamiTV - Películas</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home/style.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+ <div class="nav-container" id="nav"></div>
+
+
+
+  <!-- HERO CAROUSEL -->
+  <section class="hero-carousel" id="heroCarousel"></section>
+
+  <div class="hero-controls">
+    <div class="hero-controls-inner">
+      <div class="hero-dots" id="heroDots"></div>
+      <div class="hero-nav-btns">
+        <button class="hero-nav-btn" onclick="prevHeroSlide()">
+          <iconify-icon icon="lucide:chevron-left" width="18"></iconify-icon>
+        </button>
+        <button class="hero-nav-btn" onclick="nextHeroSlide()">
+          <iconify-icon icon="lucide:chevron-right" width="18"></iconify-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GENRE SECTIONS -->
+  <main class="genre-container">
+    <section id="continueWatchingSection" class="continue-section"></section>
+    <div id="genreSections"></div>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="movieModal" onclick="closeModalBackdrop(event)">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <iconify-icon icon="lucide:check-circle" width="18" style="color:#22c55e"></iconify-icon>
+    <span id="toastMsg">Añadido a Mi Lista</span>
+  </div>
+
+  <!-- FOOTER -->
+ 
+
+
+  <script src="data.js"></script>
+  <script src="common.js"></script>
+  <script src="header/header.js"></script>
+  <script src="footer/footer.js"></script>
+  <script src="home/script.js"></script>
+</body>
+</html>
