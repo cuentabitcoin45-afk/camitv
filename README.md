@@ -1,2 +1,0 @@
-# camitv
-App the movies
